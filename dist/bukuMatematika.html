@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Informasi Buku</title>
+    <meta name="dicoding:email" content="gracian408@gmail.com">
+    <link rel="icon" href="eee76edcef1134631c8f.png">
+<script defer src="bundle.js"></script></head>
+<body>
+    <header>
+        <nav>
+            <a href="/" class="back">← Matematika</a>
+        </nav>  
+    </header>
+    <main class="mainBuku">
+        <div class="listBuku" id="listBuku"></div>
+        <div class="listQuiz">
+            <p class="quizHarian">Quiz Harian</p>
+            <div class="quiz">
+                <a href="/quiz.html">
+                    <span class="nomor">1</span>
+                    <p class="namaQuiz">Matematika Quiz</p>
+                </a>
+            </div>
+            <div class="quiz">
+                <a href="#">
+                    <span class="nomor">2</span>
+                    <p class="namaQuiz">Nama Quiz</p>
+                </a>
+            </div>
+            <div class="quiz">
+                <a href="#">
+                    <span class="nomor">3</span>
+                    <p class="namaQuiz">Nama Quiz</p>
+                </a>
+            </div>
+            <div class="quiz">
+                <a href="#">
+                    <span class="nomor">4</span>
+                    <p class="namaQuiz">Nama Quiz</p>
+                </a>
+            </div>
+            <div class="quiz">
+                <a href="#">
+                    <span class="nomor">5</span>
+                    <p class="namaQuiz">Nama Quiz</p>
+                </a>
+            </div>
+        </div>
+    </main>
+</body>
+<script>
+    fetch('https://www.googleapis.com/books/v1/volumes?q=Matematika&key=AIzaSyDnGbXO3UpJqMQs9ByZZOFvsKnEuJtQEQs')
+    .then(response => response.json())
+    .then(data => {
+        const bookInfo = document.getElementById('listBuku');
+        
+        if (data.items && data.items.length > 0) {
+            data.items.forEach(item => {
+                const book = item.volumeInfo; 
+                const harga = item.saleInfo;
+                const bookDiv = document.createElement('div');
+                bookDiv.classList.add('buku');
+                bookDiv.innerHTML = `
+                    <div class="coverBuku">
+                        <img src="${book.imageLinks ? book.imageLinks.thumbnail : ''}" alt="${book.title}">
+                    </div>
+                    <div class="rincianBuku">
+                        <a href="${book.previewLink ? book.previewLink : '#'}" target="_blank" class="title">${book.title}</a>
+                        <p class="authors">${book.authors ? book.authors.join(', ') : 'Penulis tidak diketahui'}</p>
+                        <div class="rateHarga">
+                            <p class="harga">${harga && harga.listPrice ? 'Rp ' + harga.listPrice.amount + ' ' : 'Harga tidak tersedia'}</p>
+                        </div>
+                    </div>
+                `;
+                bookInfo.appendChild(bookDiv);
+            });
+        } else {
+            bookInfo.innerHTML = '<p>Tidak ada buku yang ditemukan.</p>';
+        }
+    })
+    .catch(error => console.error('Error:', error));
+</script>
+</html>

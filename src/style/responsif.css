@@ -1,0 +1,283 @@
+/* 
+    big desktop
+*/
+@media only screen and (min-width: 1281px){
+    /* 
+        pembelajaran
+    */
+    .pembelajaran {
+        width: 39vw;
+    }
+}
+
+/* 
+    big tablet 
+*/
+@media only screen and (max-width: 835px) {
+    /* 
+        pembelajaran
+    */
+    .pembelajaran{
+        width: 80vw;
+    }
+}
+
+/* 
+    mini tablet 
+*/
+@media only screen and (max-width: 768px) {
+    /* 
+        header
+    */
+    .logo > a > p {
+        font-size: large;
+    }
+
+    /* 
+        main
+    */
+    .hero {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero > .descriptionHero {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    .descriptionHero > p {
+        margin: 5% 0;
+    }
+
+    .descriptionHero > a {
+        display: inline;
+        padding: 0.75rem 1rem;
+        font-size: medium;
+    }
+
+    .hero > img {
+        width: 50vw;
+        margin: 5% 0;
+    }
+    
+    /* 
+        pembelajaran
+    */
+    .pembelajaran{
+        width: 80vw;
+    }
+
+    /* 
+        pengalaman pengguna
+    */
+    .quote {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    .detailQuote {
+        padding: 0;
+        text-align: center;
+    }
+
+    .detailQuote > p {
+        text-align: center;
+        font-size: medium;
+    }
+
+    .namaAuthor {
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+    .detailQuote > span {
+        font-size: xxx-large;
+    }
+
+    /* 
+        footer
+    */
+    .detailFooter {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .detailInstansi {
+        width: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .contactPerson > ul {
+        padding: 0;
+    }
+
+    .itemMenu {
+        justify-content: center;
+    }
+}
+
+/* 
+    ponsel
+*/
+@media only screen and (max-width: 480px) {
+    /* 
+        header
+    */
+    .logo > a > p {
+        font-size: large;
+    }
+
+    .navMenu {
+        display: none;
+    }
+
+    .navMenuHidden {
+        display: none; /* Ensure hidden by default */
+        background-color: rgba(255, 255, 255, 1);
+        position: absolute;
+        width: 55%;
+        right: 0;
+        top: 15%;
+        height: 100vh;
+        z-index: 1000;
+        box-shadow: -5px 1px 3px rgba(0, 0, 0, 0.50);
+    }
+
+    .burgerMenu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2%;
+    }
+
+    .burgerMenu button{
+        border: none;
+        font-size: x-large;
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    /* 
+        main
+    */
+    .hero {
+        display: block;
+    }
+
+    .hero > .descriptionHero {
+        width: 100%;
+        text-align: center;
+    }
+
+    .descriptionHero > a {
+        display: inline;
+        padding: 0.75rem 1rem;
+        font-size: medium;
+    }
+
+    .hero > img {
+        width: 250px;
+        display: flex;
+        margin: 30px auto 0;
+    }
+
+    /* 
+        logo partner
+    */
+    .logoPartner > ul > li > img {
+        display: none;
+    }
+
+    /* 
+        pembelajaran
+    */
+    .pembelajaran {
+        width: auto;
+        margin: 0.5rem;
+    }
+
+    .pembelajaran > img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .detail {
+        margin-left: 1rem;
+    }
+
+    .detail > h3 {
+        font-size: large;
+    }
+
+    .detail > p {
+        font-size: small;
+    }
+
+    /* 
+        pengalaman pengguna
+    */
+    .quote {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    .detailQuote {
+        padding: 0;
+        text-align: center;
+    }
+
+    .detailQuote > p {
+        text-align: center;
+        font-size: medium;
+    }
+
+    .namaAuthor {
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+    .detailQuote > span {
+        font-size: xxx-large;
+    }
+
+    /* 
+        footer
+    */
+    .detailFooter {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .detailInstansi {
+        width: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .contactPerson > ul {
+        padding: 0;
+    }
+
+    .itemMenu {
+        justify-content: center;
+    }
+}

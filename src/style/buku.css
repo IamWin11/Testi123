@@ -1,0 +1,123 @@
+/* 
+    header
+*/
+.back{
+    text-decoration: none;
+    font-size: xx-large;
+    font-weight: 400;
+    color: black;
+}
+
+/* 
+    main
+*/
+.mainBuku{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 5%;
+}
+
+.listBuku{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 70vw;
+}
+
+.buku{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 20vw;
+    height: 55vh;
+    margin: 0 0 4%;
+    border: 1px solid rgb(0, 0, 0, 0.5);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.coverBuku{
+    width: 20vw;
+    height: 40vh;
+    overflow: hidden;
+}
+
+.buku img{
+    width: 100%;
+}
+
+.rincianBuku{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    padding: 5% 5%;
+}
+
+.title{
+    font-size: large;
+    font-weight: 600;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.authors{
+    font-size: medium;
+    font-weight: 400;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.rateHarga{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 4%;
+}
+
+.quizHarian{
+    font-size: x-large;
+    font-weight: 500;
+    margin-bottom: 5%;
+}
+
+.listQuiz{
+    border: 1px solid rgb(0, 0, 0, 0.5);
+    border-radius: 8px;
+    width: 15vw;
+    height: min-content;
+    padding: 2%;
+    margin-left: 3%;
+}
+
+.quiz{
+    margin: 1.5rem 0;
+}
+
+.quiz a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nomor{
+    font-size: xx-large;
+    font-weight: 800;
+    padding: 0.5rem 1rem;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 8px;
+}
+
+.namaQuiz{
+    margin: 0 1rem;
+    font-size: larger;
+    color: black;
+}

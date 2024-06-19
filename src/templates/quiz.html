@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="dicoding:email" content="gracian408@gmail.com">
+    <title>Quiz App</title>
+</head>
+<body class="quizBody">
+    <div class="rules-container" id="rules">
+        <h2>Quiz Rules</h2>
+        <ul>
+            <li>Berdoa Sebelum memulai quiz.</li>
+            <li>Baca Dan Pilh Jawaban Dengan Teliti.</li>
+            <li>Perhatikan Waktu Pengerjaan.</li>
+        </ul>
+        <button id="quiz1">Start Quiz 1</button>
+        <button id="quiz2">Start Quiz 2</button>
+        <button id="quiz3">Start Quiz 3</button>
+        <button id="viewScores">View Scores</button>
+    </div>
+
+    <div class="quiz-container" id="quiz-container" style="display: none;">
+        <div id="quiz">
+            <div class="timer" id="timer">Time: 60s</div>
+            <h2 id="question">Question Text</h2>
+            <ul>
+                <li>
+                    <input type="radio" id="a" name="answer" class="answer">
+                    <label for="a" id="a_text">Answer A</label>
+                </li>
+                <li>
+                    <input type="radio" id="b" name="answer" class="answer">
+                    <label for="b" id="b_text">Answer B</label>
+                </li>
+                <li>
+                    <input type="radio" id="c" name="answer" class="answer">
+                    <label for="c" id="c_text">Answer C</label>
+                </li>
+                <li>
+                    <input type="radio" id="d" name="answer" class="answer">
+                    <label for="d" id="d_text">Answer D</label>
+                </li>
+            </ul>
+            <button id="submit">Submit</button>
+        </div>
+    </div>
+
+    <div class="scores-container" id="scores-container" style="display: none;">
+        <h2>Scores</h2>
+        <div id="scores"></div>
+        <button onclick="location.reload()">Kembali</button>
+    </div>
+</body>
+</html>

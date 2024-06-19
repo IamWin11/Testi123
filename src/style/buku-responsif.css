@@ -1,0 +1,48 @@
+/* 
+    big desktop
+*/
+@media only screen and (min-width: 1281px){
+    
+}
+
+/* 
+    big tablet
+*/
+@media only screen and (max-width: 835px){
+    /* 
+        list buku 
+    */
+    .listBuku{
+        width: 65vw;
+    }
+
+    .buku{
+        width: 30vw;
+        height: 40vh;
+        margin: 0 0 2rem;
+    }
+
+    .coverBuku{
+        width: 100%;
+        height: 30vh;
+    }
+
+    .listQuiz{
+        width: 20vw;
+        margin: 0 0 0 1rem ;
+    }
+}
+
+/* 
+    mini tablet
+*/
+@media only screen and (max-width: 768px){
+
+}
+
+/* 
+    ponsel
+*/
+@media only screen and (max-width: 480px){
+    
+}

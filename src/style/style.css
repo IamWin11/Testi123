@@ -1,0 +1,329 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* app bar */
+nav{
+    background-color: white;
+    /* border: solid black;
+    border-width: 0 0 1px 0; */
+    display: flex;
+    padding: 2% 5%;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo>a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+.logo>a>img {
+    width: 44px;
+    height: 44px;
+}
+.logo>a>p {
+    padding: 0 1rem;
+    margin: 0;
+    font-size: xx-large;
+}
+.navMenu>ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+.navItem{
+    height: 44px;
+    display: flex;
+    align-items: center;
+}
+.navItem>a{
+    display: flex;
+    padding: 0 1rem;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-size: large;
+}
+.navItem>a:hover{
+    background-color: #ebebeb;
+    border-radius: 8px;
+}
+.loginRegister{
+    height: 44px;
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+.loginRegister>a{
+    display: flex;
+    padding: 0 1rem;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+.loginRegister>a:hover{
+    color: white;
+    background-color: black;
+}
+.burgerMenu{
+    display: none;
+}
+.navMenuHidden{
+    display: none;
+}
+
+/* hero */
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    /* border: solid black;
+    border-width: 0 0 1px 0; */
+}
+.hero>.descriptionHero{
+    width: 55%;
+}
+.descriptionHero>h1{
+    margin: 0;
+    padding: 0;
+    font-size: xxx-large;
+}
+.descriptionHero>p{
+    margin-bottom: 32px;
+}
+.descriptionHero>a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 125px;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-size: large;
+    font-weight: 500;
+    color: black;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+.descriptionHero>a:hover{
+    color: white;
+    background-color: black;
+}
+.hero>img{
+    width: 400px;
+}
+
+/* logo partner */
+/* .logoPartner{
+    border: solid black;
+    border-width: 0 0 1px 0;
+} */
+.logoPartner>ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+.logoPartner>ul>li{
+    list-style: none;
+}
+.logoPartner>ul>li>img{
+    width: 6vw;
+    padding: 1rem;
+}
+
+/* pilihan pembelajaran */
+.pilihanPembelajaran{
+    padding: 1rem 5%;
+}
+.judulMenu{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+.judulMenu:hover>.aksesorisMenu{
+    width: 15rem;
+    height: 2.5rem;
+}
+.aksesorisMenu{
+    position: absolute;
+    z-index: -1;
+    width: 0.5rem;
+    height: 2.5rem;
+    background-color: #dfdfdf;
+    border-radius: 5px;
+}
+.judulMenu>h2{
+    margin: 0 1rem;
+    padding: 0;
+    font-size: x-large;
+}
+.listPembelajaran{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.listPembelajaran>a{
+    text-decoration: none;
+    color: black;
+}
+.pembelajaran{
+    display: flex;
+    width: 35vw;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+.pembelajaran:hover{
+    position: relative;
+    top: -10px;
+    left: -10px;
+    box-shadow: 10px 10px 1px black
+}
+.pembelajaran>img{
+    width: 90px;
+    height: 90px;
+}
+.detail{
+    margin-left: 2rem;
+}
+.detail>h3{
+    font-size: xx-large;
+    margin: 0;
+}
+.detail>p{
+    margin: 0;
+    text-align: justify;
+}
+
+/* pengalaman pengguna */
+.pengalamanPengguna{
+    padding: 1rem 5% 2rem 5%;
+}
+.quote{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+    margin-top: 1.5rem;
+    background-color: #dfdfdf;
+    border-radius: 8px;
+}
+.detailQuote{
+    padding: 1rem 2rem;
+}
+.detailQuote>span{
+    font-size: 64px;
+}
+.detailQuote>p{
+    margin: 0 0 2%;
+    font-size: x-large;
+    text-align: justify;
+}
+.namaAuthor{
+    text-align: right;
+}
+.namaAuthor>h4,p{
+    margin: 0;
+}
+.quote>img{
+    width: 300px;
+    border-radius: 8px;
+}
+
+/* footer */
+footer{
+    padding: 1rem 5%;
+    background-color: #dfdfdf;
+}
+.detailInstansi{
+    width: 400px;
+    margin-right: auto;
+}
+.detailFooter{
+    display: flex;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+.logo>img{
+    width: 75px;
+}
+.logo>p{
+    font-size: x-large;
+    font-weight: 700;
+    padding: 0 1rem;
+    margin: 0;
+}
+.detailInstansi>p{
+    padding: 1rem;
+    font-size: large;
+}
+.sosmed{
+    padding: 1rem;
+}
+.sosmed>a{
+    padding: 0.5rem;
+}
+.sosmed>a>img{
+    width: 30px;
+}
+.service{
+    width: 300px;
+}
+.service>ul{
+    padding: 0;
+    list-style: none;
+}
+.service>ul>li>h1{
+    margin: 0;
+}
+.itemMenu{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 44px;
+}
+.itemMenu>a{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 1rem 0;
+    color: black;
+    text-decoration: none;
+}
+.contactPerson>ul{
+    list-style: none;
+}
+.contactPerson>ul>li>h2{
+    margin: 0;
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1rem 0 1rem ;
+    border: solid black;
+    border-width: 1px 0 0 0;
+}
